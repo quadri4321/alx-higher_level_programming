@@ -1,9 +1,9 @@
-!/usr/bin/python3
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
-    """Function that prints a matrix of integers"""
-    for i in range(len(matrix)):
-        for j in range(len(matrix[i])):
-            if j != 0:
-                print(" ", end='')
-            print("{:d}".format(matrix[i][j]), end='')
-        print()
+    for y in range(len(matrix)):
+        for i in range(len(matrix[y])):
+            print("{:d}".format(matrix[y][i]), end="")
+            if i != (len(matrix[y]) - 1):
+                print(" ", end="")
+
+        print("")
